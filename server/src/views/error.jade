@@ -1,0 +1,6 @@
+block content
+  h1= message || 'An error occurred'
+  if error && error.status
+    h2= error.status
+  if error && error.stack
+    pre #{error.stack}
